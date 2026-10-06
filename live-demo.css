@@ -1,0 +1,18 @@
+:root{color-scheme:dark}
+.live-demo-launch{background:var(--ink);border-top:1px solid var(--line);padding:120px 0}
+.live-demo-launch__inner{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:end}
+.live-demo-launch h2{font-size:clamp(44px,6vw,96px);line-height:.9;letter-spacing:-.07em;margin:24px 0 0;text-wrap:balance}
+.live-demo-launch__action{display:flex;flex-direction:column;gap:22px;min-width:0}
+.live-demo-launch__action p{color:#b9b8b1;font-size:15px;line-height:1.7;margin:0;max-width:46ch}
+.live-demo-button{display:flex;justify-content:space-between;align-items:center;gap:40px;background:var(--acid);color:var(--ink);padding:22px 24px;font:12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;font-weight:700;transition:background .2s}
+.live-demo-button i{font-style:normal;font-size:20px}
+.live-demo-button:hover{background:var(--paper)}
+.live-demo-button:focus-visible{outline:2px solid var(--paper);outline-offset:4px}
+.live-demo-button.is-live{box-shadow:0 0 0 1px var(--acid),0 0 40px rgba(216,255,55,.25)}
+#liveDemoStatus{color:var(--muted);font:11px/1.7 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.04em}
+#liveDemoStatus b{color:var(--acid);font-weight:400}
+@media(max-width:900px){.live-demo-launch{padding:90px 0}.live-demo-launch__inner{grid-template-columns:1fr;gap:36px}}
+@media(max-width:560px){.shell{width:calc(100% - 32px)}.pitch-rail{display:none}}
+html,body{overflow-x:clip}
+.comparison-table{overflow-x:auto}
+@media(min-width:901px){.live-demo-launch__action{padding-right:64px}}

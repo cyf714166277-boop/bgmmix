@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="BGMMix 路演与产品交互原型 — 让 AI 音乐看得见、听得见、改得动">
+  <title>BGMMix Roadshow</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pitch.css">
+  <link rel="stylesheet" href="live-demo.css">
+  <link rel="stylesheet" href="studio.css">
+</head>
+<body>
+  <main id="top">
+    <nav class="nav shell">
+      <a class="brand" href="#top" aria-label="BGMMix 首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>BGMM<span style="font-weight:800">ix</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#pain">Story</a>
+        <a href="#compare">Compare</a>
+        <a href="#studio">Live App</a>
+      </div>
+      <a class="nav-cta" href="#pain">Start the pitch <span>↓</span></a>
+    </nav>
+
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span>●</span> BGMMIX / ROADSHOW 2026</p>
+        <h1>YOUR IDEA.<br><em>OUR RHYTHM.</em><br>YOUR MIX.</h1>
+        <p class="hero-desc">面向每一个有音乐创意、却没有专业制作能力的人。BGMMix 把复杂的音乐改编变成看得懂、听得见、还能继续修改的共创体验。</p>
+        <div class="hero-actions">
+          <a href="#pain" class="button button-primary">START THE STORY <span>↓</span></a>
+          <button class="text-button" id="heroPlay" type="button"><span class="mini-play">▶</span> SEE IT MOVE</button>
+        </div>
+      </div>
+      <div class="sound-orbit" id="soundOrbit" aria-hidden="true">
+        <div class="orbit-label top">MELODY <b>01</b></div>
+        <div class="orbit-label right">RHYTHM <b>02</b></div>
+        <div class="orbit-label bottom">TEXTURE <b>03</b></div>
+        <div class="orbit-label left">SPACE <b>04</b></div>
+        <div class="orbit-ring orbit-ring-a"></div>
+        <div class="orbit-ring orbit-ring-b"></div>
+        <div class="orbit-ring orbit-ring-c"></div>
+        <div class="orbit-core"><span>BG<br>MIX</span></div>
+        <div class="orbit-dot dot-a"></div><div class="orbit-dot dot-b"></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="产品能力">
+      <div>ANALYZE <span>✦</span> REARRANGE <span>✦</span> REIMAGINE <span>✦</span> REMIX <span>✦</span> ANALYZE <span>✦</span> REARRANGE <span>✦</span></div>
+    </section>
+
+    <aside class="pitch-rail" aria-label="路演章节导航">
+      <a href="#pain" data-label="痛点">01</a><a href="#audience" data-label="人群">02</a>
+      <a href="#concept" data-label="构思">03</a><a href="#technology" data-label="技术">04</a>
+      <a href="#future" data-label="未来">05</a><a href="#compare" data-label="竞品">06</a>
+      <a href="#studio" data-label="完整产品">LIVE</a>
+    </aside>
+
+    <section class="pitch-section pain-section shell" id="pain" data-pitch-section>
+      <div class="pitch-kicker"><span>01</span><p>THE PAIN / 痛点</p></div>
+      <div class="pitch-title-row">
+        <h2>好内容，常常卡在<br><em>一首不合适的音乐。</em></h2>
+        <p>创作者不是没有灵感，而是缺少一种能把灵感快速变成音乐、同时保留控制权的工具。</p>
+      </div>
+      <div class="pain-grid">
+        <article><span>01</span><b>HIGH BARRIER</b><h3>专业门槛高</h3><p>传统编曲需要乐理、混音经验和复杂软件学习成本。</p><i>DAW ≠ EASY</i></article>
+        <article><span>02</span><b>SAME SOUND</b><h3>素材同质化</h3><p>热门曲库被反复使用，作品很难形成独特声音身份。</p><i>ONE TRACK × 10K</i></article>
+        <article><span>03</span><b>LOW CONTROL</b><h3>生成不可控</h3><p>一句话生成很快，但结果像黑盒，细节不满意时很难继续改。</p><i>PROMPT → ?</i></article>
+        <article><span>04</span><b>TIME &amp; COST</b><h3>定制成本高</h3><p>找人制作耗时昂贵，找音乐又要在素材库中反复筛选。</p><i>SEARCH. WAIT. PAY.</i></article>
+      </div>
+      <div class="pitch-statement">创作者需要的不是更多随机结果，而是<strong>更低门槛的控制权。</strong></div>
+    </section>
+
+    <section class="pitch-section audience-section" id="audience" data-pitch-section>
+      <div class="shell">
+        <div class="pitch-kicker light-kicker"><span>02</span><p>WHO IT IS FOR / 目标人群</p></div>
+        <div class="audience-hero"><p>不是音乐专业人士？</p><h2>THEN IT’S<br><em>FOR YOU.</em></h2></div>
+        <div class="audience-grid">
+          <article><span>01</span><h3>视频创作者</h3><p>让音乐跟上剪辑节奏，而不是让画面迁就现成音乐。</p></article>
+          <article><span>02</span><h3>播客与自媒体</h3><p>快速建立独特、统一且可持续的声音品牌。</p></article>
+          <article><span>03</span><h3>游戏与独立开发</h3><p>为不同场景创建可循环、可变化的音乐方向。</p></article>
+          <article><span>04</span><h3>普通音乐爱好者</h3><p>不懂乐理，也能把一次哼唱或灵感变成完整方向。</p></article>
+        </div>
+        <p class="audience-note">我们的目标不是替代专业音乐人，而是让更多人拥有开始创作的能力。</p>
+      </div>
+    </section>
+
+    <section class="pitch-section concept-section shell" id="concept" data-pitch-section>
+      <div class="pitch-kicker"><span>03</span><p>THE IDEA / 我们的构思</p></div>
+      <div class="pitch-title-row">
+        <h2>把 AI 从生成按钮，<br>变成一个<em>共创伙伴。</em></h2>
+        <p>BGMMix 先理解原始音乐，再把每一步修改变成用户能够理解和接管的选择。</p>
+      </div>
+      <div class="flow-line">
+        <article><span>01</span><div class="flow-icon">＋</div><h3>上传灵感</h3><p>歌曲、Demo 或哼唱</p></article><i>→</i>
+        <article><span>02</span><div class="flow-icon">⌁</div><h3>理解音乐</h3><p>BPM、调性、情绪、结构</p></article><i>→</i>
+        <article><span>03</span><div class="flow-icon">✦</div><h3>选择方向</h3><p>风格配方或自然语言</p></article><i>→</i>
+        <article><span>04</span><div class="flow-icon">≋</div><h3>继续掌控</h3><p>A/B 试听、调节、导出</p></article>
+      </div>
+      <div class="difference-banner"><span>OUR DIFFERENCE</span><strong>看得见 AI 改了什么，听得见结果，还能继续修改。</strong></div>
+    </section>
+
+    <section class="pitch-section technology-section" id="technology" data-pitch-section>
+      <div class="shell">
+        <div class="pitch-kicker"><span>04</span><p>UNDER THE HOOD / 运用的技术</p></div>
+        <div class="pitch-title-row tech-title">
+          <h2>AI 负责理解，<br><em>工具负责准确执行。</em></h2>
+          <p>Agent 不直接“碰音频”，而是生成结构化 RemixPlan；确定性音频引擎负责执行、验证和复现。</p>
+        </div>
+        <div class="tech-flow">
+          <article><span>INPUT</span><strong>React + TypeScript</strong><p>上传、波形、参数控制与 A/B 试听</p></article><b>→</b>
+          <article><span>INTELLIGENCE</span><strong>Kimi Agents</strong><p>Analyzer、Planner、Producer、Orchestrator</p></article><b>→</b>
+          <article class="tech-acid"><span>CONTRACT</span><strong>RemixPlan</strong><p>结构化计划、参数范围与修改原因</p></article><b>→</b>
+          <article><span>AUDIO ENGINE</span><strong>Python + FastAPI</strong><p>librosa、SciPy、libsndfile 稳定渲染</p></article><b>→</b>
+          <article><span>STEMS</span><strong>Demucs</strong><p>Vocals / Drums / Bass / Other 四轨分离</p></article>
+        </div>
+        <div class="proof-grid">
+          <article><strong>44</strong><span>后端自动测试</span></article><article><strong>4</strong><span>AI 协作角色</span></article>
+          <article><strong>6</strong><span>可执行风格配方</span></article><article><strong>10 MIN</strong><span>本地歌曲输入上限</span></article>
+        </div>
+        <p class="tech-boundary">当前能力边界：已实现参数化风格改编、四轨混合与 AI 方案；真正的逐段自动化和旋律级重写属于下一阶段。</p>
+      </div>
+    </section>
+
+    <section class="pitch-section future-section shell" id="future" data-pitch-section>
+      <div class="pitch-kicker"><span>05</span><p>WHAT’S NEXT / 未来前景</p></div>
+      <div class="pitch-title-row">
+        <h2>从一次 Remix，<br>走向每个人的<em>音乐工作台。</em></h2>
+        <p>先解决“改得动”，再走向“编得出、协作好、用得安全”。</p>
+      </div>
+      <div class="roadmap">
+        <article class="now"><span>NOW</span><h3>可控改编</h3><p>上传分析、四轨分离、风格配方、AI 草案、A/B 试听与导出。</p><i>PROVEN</i></article>
+        <article><span>NEXT</span><h3>局部共创</h3><p>时间线选区、局部修改、版本历史和更精细的自动化曲线。</p><i>PHASE 5</i></article>
+        <article><span>THEN</span><h3>生成式编曲</h3><p>旋律、和声、鼓点和配器级生成，建立真正可编辑的多轨工程。</p><i>EXPAND</i></article>
+        <article><span>FUTURE</span><h3>创作者生态</h3><p>多曲 Remix、模板市场、协作项目、版权与商业授权体系。</p><i>PLATFORM</i></article>
+      </div>
+      <div class="market-line"><span>VIDEO</span><i>×</i><span>PODCAST</span><i>×</i><span>GAME</span><i>×</i><span>ARTIST</span><i>=</i><strong>CREATOR ECONOMY</strong></div>
+    </section>
+
+    <section class="pitch-section compare-section" id="compare" data-pitch-section>
+      <div class="shell">
+        <div class="pitch-kicker light-kicker"><span>06</span><p>COMPETITIVE LANDSCAPE / 竞品分析</p></div>
+        <div class="pitch-title-row compare-title">
+          <h2>不是更快地生成，<br>而是更自由地<em>继续创作。</em></h2>
+          <p>Suno 擅长生成，库乐队擅长专业编辑；BGMMix 试图填补两者之间的“可控 AI 改编”空白。</p>
+        </div>
+        <div class="comparison-table" role="table" aria-label="BGMMix 竞品对比">
+          <div class="comparison-row comparison-head" role="row"><span>维度</span><strong>SUNO</strong><strong>库乐队</strong><strong class="bgm-cell">BGMMix</strong></div>
+          <div class="comparison-row" role="row"><span>核心入口</span><b>文字 / 音频生成</b><b>乐器 / Loop / 轨道</b><b class="bgm-cell">上传原曲 / 创作意图</b></div>
+          <div class="comparison-row" role="row"><span>上手门槛</span><b>低</b><b>中</b><b class="bgm-cell">低</b></div>
+          <div class="comparison-row" role="row"><span>生成能力</span><b>强</b><b>弱</b><b class="bgm-cell">AI 方案 + 风格改编</b></div>
+          <div class="comparison-row" role="row"><span>细节控制</span><b>Studio 提供多轨编辑</b><b>强，传统 DAW 工作流</b><b class="bgm-cell">参数可见、可锁定、可接管</b></div>
+          <div class="comparison-row" role="row"><span>适合谁</span><b>快速生成完整歌曲</b><b>愿意学习音乐制作的人</b><b class="bgm-cell">想创作但不懂专业制作的人</b></div>
+          <div class="comparison-row opportunity" role="row"><span>BGMMix 机会</span><b>在“一键黑盒”和“专业工作站”之间，建立易用、可解释、可编辑的 AI 音乐共创体验。</b></div>
+        </div>
+        <p class="source-note">竞品能力依据 Suno 与 Apple 官方公开页面整理，信息核对时间：2026 年 7 月。</p>
+        <a class="demo-jump" href="#studio"><span>THE IDEA IS CLEAR.</span><strong>NOW, SEE THE PRODUCT.</strong><i>↓</i></a>
+      </div>
+    </section>
+
+    <section class="bx" id="studio" data-pitch-section>
+      <div class="shell">
+        <header class="bx-head">
+          <div>
+            <p class="eyebrow"><span>●</span> LIVE / FULL PRODUCT</p>
+            <h2>THE STORY IS OVER.<br><em>NOW BUILD THE MIX.</em></h2>
+          </div>
+          <div class="bx-head-note">
+            <p>上传一首歌，或者直接用已经载入的示例曲。分析、四轨分离、AI 方案、风格改编、A/B 试听和导出都在你的浏览器里完成，音频不会上传到任何服务器。</p>
+            <div class="bx-chips-row"><span class="bx-chip" id="bxPlannerBadge">PLANNER · 本地规则</span><span class="bx-chip">ENGINE · WEB AUDIO</span><span class="bx-chip">STEMS · DSP LITE</span></div>
+          </div>
+        </header>
+
+        <p class="bx-status" id="bxStatus" aria-live="polite">正在载入示例曲…</p>
+
+        <div class="bx-grid bx-top">
+          <article class="bx-card bx-input">
+            <div class="card-label"><span>INPUT</span><span>01</span></div>
+            <input id="bxFile" type="file" accept="audio/*,.mp3,.wav,.m4a,.flac,.ogg" hidden>
+            <button class="bx-drop" id="bxDrop" type="button">
+              <span class="upload-plus">+</span>
+              <strong>DROP YOUR SOUND</strong>
+              <small>MP3 · WAV · M4A · FLAC · 最长 10 分钟</small>
+            </button>
+            <div class="bx-file"><strong id="bxName">—</strong><small id="bxMeta">还没有音频</small></div>
+            <button class="bx-textlink" id="bxDemo" type="button">↺ 重新载入示例曲 midnight-humming</button>
+          </article>
+
+          <article class="bx-card bx-dna">
+            <div class="card-label"><span>MUSICAL DNA · ANALYZER</span><span>LIVE</span></div>
+            <div class="dna-top">
+              <div><small>TEMPO</small><strong id="bxBpm">—</strong><span>BPM</span></div>
+              <div><small>KEY</small><strong id="bxKey">—</strong><span id="bxMode">—</span></div>
+              <div><small>ENERGY</small><strong id="bxEnergy">—</strong><span>/ 100</span></div>
+              <div><small>LOUDNESS</small><strong id="bxLoud">—</strong><span>dBFS RMS</span></div>
+            </div>
+            <div class="mood-row"><span>MOOD</span><div id="bxMoods"></div></div>
+            <p class="bx-small" id="bxConf">等待音频</p>
+          </article>
+        </div>
+
+        <article class="bx-card bx-deck" aria-label="试听">
+          <div class="bx-deck-top">
+            <button class="round-play" id="bxPlay" type="button" aria-label="播放或暂停">▶</button>
+            <div class="bx-ab" id="bxAB" role="group" aria-label="A/B 对比">
+              <button type="button" data-ab="A" class="active">A · ORIGINAL</button>
+              <button type="button" data-ab="B" disabled>B · REMIX</button>
+            </div>
+            <span class="bx-time" id="bxTime">0:00 / 0:00</span>
+            <span class="bx-now" id="bxNow">正在听：A · 原曲</span>
+          </div>
+          <canvas class="bx-wave" id="bxWave" aria-label="波形，点击跳转"></canvas>
+          <div class="bx-sections" id="bxSections" aria-label="段落结构"></div>
+        </article>
+
+        <div class="bx-grid bx-mid">
+          <article class="bx-card bx-stems">
+            <div class="card-label"><span>STEMS · 4-TRACK</span><span id="bxStemState">WAITING</span></div>
+            <div id="bxStemRows"></div>
+            <p class="bx-small" id="bxStemNote">载入音频后自动分离成人声、鼓组、贝斯和其他乐器。</p>
+          </article>
+
+          <article class="bx-card bx-agent">
+            <div class="card-label"><span>CHOOSE A DIRECTION</span><span>02</span></div>
+            <div class="bx-recipes" id="bxRecipes"></div>
+            <label class="bx-label" for="bxIntent">或者用一句话告诉 Agent 你想要的感觉</label>
+            <textarea id="bxIntent" rows="3" placeholder="例如：做成适合旅行 vlog 的轻松版本，人声往后放，加一点黑胶质感"></textarea>
+            <div class="bx-ideas" id="bxIdeas"></div>
+            <button class="generate-button" id="bxAsk" type="button" disabled>生成 AI 方案 <span>↗</span></button>
+            <ol class="bx-agents" id="bxAgents" aria-label="Agent 协作进度"></ol>
+          </article>
+        </div>
+
+        <article class="bx-card bx-plan">
+          <div class="card-label"><span>REMIXPLAN · 看得见 AI 改了什么</span><span>03</span></div>
+          <div class="bx-plan-head">
+            <div>
+              <h3 id="bxPlanTitle">原曲参数</h3>
+              <p id="bxPlanSummary"></p>
+              <small>PLANNER：<span id="bxPlanSource">—</span></small>
+            </div>
+            <div class="bx-plan-actions">
+              <span class="bx-dirty" id="bxDirty" hidden>有未渲染的改动</span>
+              <button class="bx-btn bx-btn-acid" id="bxRender" type="button" disabled>渲染改动 ↗</button>
+              <button class="bx-btn" id="bxReset" type="button" disabled>回到原曲参数</button>
+            </div>
+          </div>
+          <div class="bx-plan-body">
+            <div class="bx-params" id="bxParams"></div>
+            <div class="bx-changes"><h4>AI 改了什么 <span>CHANGES</span></h4><ul id="bxChanges"></ul></div>
+          </div>
+          <p class="bx-small">拖动任意参数即「接管」：它会被锁定，之后 AI 生成方案时不会再改它。点 LOCKED 交还给 AI。</p>
+        </article>
+
+        <article class="bx-card bx-export">
+          <div class="card-label"><span>EXPORT</span><span>04</span></div>
+          <div class="bx-export-row">
+            <p>混音导出为 WAV，并附上完整的 RemixPlan（分析结果、每个参数、修改原因），可以复现同样的结果。</p>
+            <div class="bx-export-btns">
+              <button class="bx-btn bx-btn-acid" id="bxExportMix" type="button" disabled>导出混音 .zip</button>
+              <button class="bx-btn" id="bxExportStems" type="button" disabled>导出四轨 .zip</button>
+            </div>
+          </div>
+          <p class="bx-small" id="bxExportNote" aria-live="polite"></p>
+        </article>
+
+        <p class="bx-boundary">在线版能力边界：四轨分离使用轻量 DSP 算法，效果弱于 Demucs 等深度模型；AI 方案由 Claude 生成（需登录 Claude 并允许），否则使用本地规则 Planner；逐段自动化和旋律级重写属于下一阶段。</p>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <div class="shell">
+        <div class="section-head light">
+          <div><p class="eyebrow">02 / THE DIFFERENCE</p><h2>Not generated<br><em>over you.</em></h2></div>
+          <p>AI 应该放大创作者的直觉，而不是覆盖它。每个 BGMMix 结果都从你的原始声音出发，并把方向控制权留给你。</p>
+        </div>
+        <div class="steps">
+          <article><span>01</span><div class="step-graphic fingerprint"><i></i><i></i><i></i><i></i></div><h3>WE LISTEN</h3><p>快速识别速度、调性、能量和段落结构。</p></article>
+          <article><span>02</span><div class="step-graphic blocks"><i></i><i></i><i></i><i></i></div><h3>YOU DIRECT</h3><p>选择情绪，保留喜欢的部分，调整不满意的部分。</p></article>
+          <article><span>03</span><div class="step-graphic sliders"><i></i><i></i><i></i></div><h3>WE BUILD</h3><p>围绕你的音乐指纹，生成新的编曲方向。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision shell" id="vision">
+      <p class="eyebrow">03 / BUILT FOR CREATORS</p>
+      <div class="vision-title"><h2>ONE SPARK.<br><span>ENDLESS</span> DIRECTIONS.</h2><div class="sunburst" aria-hidden="true">✳</div></div>
+      <div class="use-grid">
+        <article><span>01</span><h3>VIDEO</h3><p>根据剪辑节奏生成配乐方向。</p></article>
+        <article><span>02</span><h3>PODCAST</h3><p>用几分钟建立声音品牌。</p></article>
+        <article><span>03</span><h3>GAMES</h3><p>创建能随场景变化的循环音乐。</p></article>
+        <article><span>04</span><h3>ARTISTS</h3><p>把未完成灵感变成多个方向。</p></article>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="shell closing-inner">
+        <p>DON’T JUST GENERATE IT.</p>
+        <h2>MAKE IT <em>YOURS.</em></h2>
+        <a href="#studio" class="closing-button">START MIXING <span>↗</span></a>
+      </div>
+    </section>
+
+    <footer class="shell footer">
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>BGMM<span>ix</span></span></a>
+      <p>AI-assisted music creation<br>for ideas worth keeping.</p>
+      <div><a href="#studio">Live App</a><a href="#workflow">Process</a><a href="#vision">About</a></div>
+      <small>© 2026 BGMMix<br>Runs in your browser</small>
+    </footer>
+  </main>
+  <script src="dsp-core.js"></script>
+  <script src="app.js"></script>
+  <script src="studio.js"></script>
+</body>
+</html>
